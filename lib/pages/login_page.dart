@@ -1,3 +1,4 @@
+import 'package:chat/auth/auth_service.dart';
 import 'package:chat/components/my_button.dart';
 import 'package:chat/components/my_textfield.dart';
 import 'package:flutter/material.dart';
@@ -9,7 +10,13 @@ class LoginPage extends StatelessWidget {
 
   LoginPage({super.key, required this.onTap});
 
-  void login() {}
+  void login() {
+    var auth = AuthService();
+    auth.signInWithEmailPassword(
+      _emailController.text,
+      _passwordController.text,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
