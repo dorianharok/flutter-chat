@@ -1,6 +1,4 @@
-import 'package:chat/auth/auth_page.dart';
-import 'package:chat/auth/login_or_register_page.dart';
-import 'package:chat/pages/home_page.dart';
+import 'package:chat/services/auth/auth_page.dart';
 import 'package:chat/themes/light_mode.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
